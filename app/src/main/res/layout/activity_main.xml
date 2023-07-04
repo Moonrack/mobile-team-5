@@ -36,6 +36,20 @@
         app:layout_constraintGuide_percent=".32"
         />
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".67"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".7"
+        />
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -97,21 +111,51 @@
         app:layout_constraintStart_toStartOf="@+id/left2" />
 
     <TextView
-        android:id="@+id/list_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dosen"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@id/bottom4"
-        app:layout_constraintEnd_toEndOf="@+id/right2" />
+        app:layout_constraintStart_toStartOf="@id/right"/>
 
     <ListView
         android:layout_width="650dp"
-        android:layout_height="150dp"
+        android:layout_height="160dp"
+        android:id="@+id/listview"
+        tools:listitem="@layout/list_item"
         app:layout_constraintStart_toStartOf="@+id/left2"
         app:layout_constraintTop_toTopOf="@id/bottom4"
         app:layout_constraintEnd_toEndOf="@+id/right"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom5"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/left2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Mata Kuliah"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/bottom6"
+        app:layout_constraintStart_toEndOf="@id/right"/>
+
+    <ListView
+        android:layout_width="650dp"
+        android:layout_height="160dp"
+        android:id="@+id/listview2"
+        tools:listitem="@layout/list_item"
+        app:layout_constraintStart_toStartOf="@+id/left2"
+        app:layout_constraintTop_toTopOf="@id/bottom5"
+        app:layout_constraintEnd_toStartOf="@id/right"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
