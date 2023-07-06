@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".02"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".1"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".27"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"
+        />
+
+
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="-0.83"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="-0.86"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top"
+        app:layout_constraintBottom_toBottomOf="@id/bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/segitiga"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/left"
+        app:layout_constraintTop_toTopOf="@id/bottom2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Sistem Informasi"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/bottom3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="GENERATE JADWAL"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/bottom4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home / Jadwal Dosen"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <TextView
+        android:id="@+id/xml_text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281" />
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        android:src="@drawable/upb"
+        app:layout_constraintBottom_toBottomOf="@id/bottom5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/left2"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TableLayout
+        android:layout_width="900dp"
+        android:layout_height="150dp"
+
+        android:background="@color/abu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+
+        app:layout_constraintStart_toEndOf="@+id/left2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+        <!--Table Heading-->
+
+        <TableRow
+
+            android:background="@color/biru">
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="10sp"
+                android:text="@string/col1"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="10sp"
+                android:text="@string/col2"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="10sp"
+                android:text="@string/col3"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="10sp"
+                android:text="@string/col4"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="10sp"
+                android:text="@string/col5"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+
+        <!--Table data-->
+
+        <!--Row Table-->
+
+        <!--Copy data disini-->
+        <TableRow>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="10sp"
+                android:text="@string/row1no"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="10sp"
+                android:text="@string/row1nama"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="10sp"
+                android:text="@string/row1mk"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="10sp"
+                android:text="@string/row1kls"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="10sp"
+                android:text="@string/row1jdw"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+        </TableRow>
+        <!--Sampe sini di copy-->
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

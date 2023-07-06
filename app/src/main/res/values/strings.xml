@@ -4,4 +4,35 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <string name="title_activity_home">Home</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <!--Table Data-->
+
+    <string name="col1">NO</string>
+    <string name="col2">NAMA DOSEN</string>
+    <string name="col3">MATA KULIAH</string>
+    <string name="col4">KELAS / RUANG</string>
+    <string name="col5">LIHAT JADWAL</string>
+
+    <!--Row1-->
+    <string name="row1no">1</string>
+    <string name="row1nama">Aswan</string>
+    <string name="row1mk">Mobile</string>
+    <string name="row1kls">TI.21.C3 / 318</string>
+    <string name="row1jdw">LIHAT</string>
+    <!--Row1 End-->
+
+    <!--Row2-->
+    <!--Copy row 1 disini dan ganti nama row1 jadi row 2-->
+    <!--Row2 End-->
+
 </resources>

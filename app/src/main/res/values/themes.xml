@@ -1,9 +1,18 @@
 <resources>
 
     <style name="Theme.Gtv" parent="@style/Theme.Leanback" />
-    
+
     <style name="searchview" parent="">
         <item name="android:editTextColor">@color/black</item>
         <item name="android:textColorHint">@color/black</item>
     </style>
+
+    <style name="Theme.Gtv.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Gtv.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Gtv.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
