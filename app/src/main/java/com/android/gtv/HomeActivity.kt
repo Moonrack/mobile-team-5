@@ -30,6 +30,5 @@ class HomeActivity : FragmentActivity() {
             overridePendingTransition(R.anim.slide_in_right, R.anim.slight_out_left)
         }
 
-
     }
 }
