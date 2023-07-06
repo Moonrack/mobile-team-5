@@ -125,10 +125,10 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintHorizontal_bias="0.036"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintVertical_bias="0.250" />
 
     <TextView
         android:id="@+id/xml_text_date"
@@ -142,7 +142,22 @@
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.281" />
+        app:layout_constraintVertical_bias="0.310" />
+
+    <TextView
+        android:id="@+id/dsn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawablePadding="1dp"
+        android:text="Pencarian Jadwal Dosen"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.310" />
 
     <ImageView
         android:layout_width="99dp"
@@ -153,6 +168,8 @@
         app:layout_constraintStart_toEndOf="@+id/left2"
         app:layout_constraintTop_toTopOf="parent"/>
 
+
+    <!--Table-->
     <TableLayout
         android:layout_width="900dp"
         android:layout_height="150dp"

@@ -1,5 +1,6 @@
 package com.android.gtv
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -18,5 +19,17 @@ class HomeActivity : FragmentActivity() {
 
         val dateTextView = findViewById<TextView>(R.id.xml_text_date)
         dateTextView.text = dateFormat
+
+        //slide anim
+
+        val move = findViewById<TextView>(R.id.dsn)
+        move.setOnClickListener {
+
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slight_out_left)
+        }
+
+
     }
 }
