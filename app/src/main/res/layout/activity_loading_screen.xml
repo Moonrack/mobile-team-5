@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".LoadingScreen">
 
     <androidx.constraintlayout.widget.Guideline
@@ -44,11 +45,12 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="@drawable/logonew"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -56,22 +58,23 @@
         android:id="@+id/jadwal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="#010068"
+        android:fontFamily="@font/poppins_bold"
         android:text="JADWAL DOSEN"
+        android:textColor="#010068"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/center"
-        app:layout_constraintEnd_toEndOf="@+id/end"
-        />
+        app:layout_constraintEnd_toEndOf="@+id/end" />
+
     <TextView
 
         android:id="@+id/kampus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="#010068"
+        android:fontFamily="@font/poppins"
         android:text="UNIVERSITAS PELITA BANGSA"
-        app:layout_constraintTop_toTopOf="@+id/center"
+        android:textColor="#010068"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/end2"
-        />
+        app:layout_constraintTop_toTopOf="@+id/center" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,14 +25,46 @@
 
     <!--Row1-->
     <string name="row1no">1</string>
-    <string name="row1nama">Aswan</string>
-    <string name="row1mk">Mobile</string>
+    <string name="row1nama">Aswan S.Sunge, S.E, M.Kom</string>
+    <string name="row1mk">Pemprograman Web 2</string>
     <string name="row1kls">TI.21.C3 / 318</string>
     <string name="row1jdw">LIHAT</string>
     <!--Row1 End-->
 
     <!--Row2-->
-    <!--Copy row 1 disini dan ganti nama row1 jadi row 2-->
+    <string name="row2no">2</string>
+    <string name="row2nama">Donny Maulana, S.Kom, M.M.S.I</string>
+    <string name="row2mk">Pemprograman Mobile</string>
+    <string name="row2kls">TI.21.C3 / 317</string>
+    <string name="row2jdw">LIHAT</string>
     <!--Row2 End-->
 
+    <!--Row3-->
+    <string name="row3no">3</string>
+    <string name="row3nama">Ahmad Turmudi Zy, S.Kom, M.Kom</string>
+    <string name="row3mk">Sistem Terdistribusi</string>
+    <string name="row3kls">TI.21.C3 / 317</string>
+    <string name="row3jdw">LIHAT</string>
+    <!--Row2 End-->
+
+    <!--Row4-->
+    <string name="row4no">4</string>
+    <string name="row4nama">Dedi Afandy, S.T, M.M</string>
+    <string name="row4mk">Pendidikan Agama</string>
+    <string name="row4kls">TI.21.C3 / 315</string>
+    <string name="row4jdw">LIHAT</string>
+    <!--Row4 End-->
+
+
+
+    <string name="jadwaldosen1">
+        \n- Jumat - 20.00 - 22.30
+        \n- Sabtu - 17.31 - 20.00
+    </string>
+
+    <string name="jadwaldosen2">
+        \n- Jumat -	17.31 - 20.00
+        \n- Sabtu -	17.31 - 20.00
+
+    </string>
 </resources>

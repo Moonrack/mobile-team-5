@@ -50,6 +50,20 @@
         app:layout_constraintGuide_percent=".7"
         />
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".75"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85"
+        />
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,6 +91,8 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent=".9"
         />
+
+    <!--End Guide line-->
 
     <ImageView
         android:id="@+id/logo2"
@@ -148,14 +164,43 @@
         app:layout_constraintBottom_toBottomOf="@id/bottom6"
         app:layout_constraintStart_toEndOf="@id/right"/>
 
-    <ListView
-        android:layout_width="650dp"
-        android:layout_height="160dp"
-        android:id="@+id/listview2"
-        tools:listitem="@layout/list_item"
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Pemograman Web 2, Aswan S. Sunge, S.E, M.Kom"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="@+id/left2"
-        app:layout_constraintTop_toTopOf="@id/bottom5"
-        app:layout_constraintEnd_toStartOf="@id/right"/>
+        app:layout_constraintTop_toTopOf="@id/bottom7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Pemrograman Mobile Donny Maulana, S.Kom., M.M.S.I"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/left2"
+        app:layout_constraintTop_toTopOf="@id/bottom8" />
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/upb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963" />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

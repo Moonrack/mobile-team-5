@@ -92,37 +92,43 @@
         android:src="@drawable/segitiga"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@id/left"
-        app:layout_constraintTop_toTopOf="@id/bottom2" />
+        app:layout_constraintTop_toTopOf="@id/bottom2"
+        app:layout_constraintVertical_bias="0.666" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:text="Sistem Informasi"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="SISTEM INFORMASI"
         android:textColor="@color/black"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="@id/bottom3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="35dp"
-        android:text="GENERATE JADWAL"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@id/bottom4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="GENERATE JADWAL"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="@id/bottom4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
         android:text="Home / Jadwal Dosen"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.036"
@@ -134,6 +140,7 @@
         android:id="@+id/xml_text_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
         android:text="Date"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -149,9 +156,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/ic_baseline_search_24"
-        android:drawablePadding="1dp"
+        android:drawablePadding="2dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="Pencarian Jadwal Dosen"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.036"
@@ -181,7 +190,7 @@
 
         app:layout_constraintStart_toEndOf="@+id/left2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintVertical_bias="0.52">
         <!--Table Heading-->
 
         <TableRow
@@ -190,49 +199,58 @@
 
             <TextView
                 android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/petrona"
+                android:gravity="center_horizontal"
                 android:padding="10sp"
                 android:text="@string/col1"
                 android:textColor="@color/black"
                 android:textSize="10sp"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/petrona"
+                android:gravity="center_horizontal"
                 android:padding="10sp"
                 android:text="@string/col2"
                 android:textColor="@color/black"
                 android:textSize="10sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/petrona"
+                android:gravity="center_horizontal"
                 android:padding="10sp"
                 android:text="@string/col3"
                 android:textColor="@color/black"
                 android:textSize="10sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/petrona"
+                android:gravity="center_horizontal"
                 android:padding="10sp"
                 android:text="@string/col4"
                 android:textColor="@color/black"
                 android:textSize="10sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/petrona"
+                android:gravity="center_horizontal"
                 android:padding="10sp"
                 android:text="@string/col5"
                 android:textColor="@color/black"
                 android:textSize="10sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -240,58 +258,227 @@
 
         <!--Row Table-->
 
-        <!--Copy data disini-->
+        <!--Data 1-->
         <TableRow>
+
             <TextView
                 android:layout_marginLeft="3dp"
-                android:padding="10sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
                 android:text="@string/row1no"
                 android:textColor="@color/black"
-                android:textSize="8sp"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                />
+                android:textSize="8dp" />
+
             <TextView
                 android:layout_marginLeft="3dp"
-                android:padding="10sp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
                 android:text="@string/row1nama"
                 android:textColor="@color/black"
-                android:textSize="8sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
+                android:textSize="8sp" />
+
             <TextView
                 android:layout_marginLeft="3dp"
-                android:padding="10sp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
                 android:text="@string/row1mk"
                 android:textColor="@color/black"
-                android:textSize="8sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
+                android:textSize="8sp" />
+
             <TextView
                 android:layout_marginLeft="3dp"
-                android:padding="10sp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
                 android:text="@string/row1kls"
                 android:textColor="@color/black"
-                android:textSize="8sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
+                android:textSize="8sp" />
+
             <TextView
                 android:layout_marginLeft="3dp"
-                android:padding="10sp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
                 android:text="@string/row1jdw"
                 android:textColor="@color/black"
-                android:textSize="8sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
+                android:textSize="8sp" />
         </TableRow>
-        <!--Sampe sini di copy-->
+        <!--Data 1 selesai-->
 
+        <!--Data 2-->
+        <TableRow>
 
-    </TableLayout>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row2no"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row2nama"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row2mk"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row2kls"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row1jdw"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+        </TableRow>
+        <!--Data 2 Selesai-->
+
+        <!--Data 3-->
+        <TableRow>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row3no"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row3nama"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row3mk"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row3kls"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row1jdw"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+        </TableRow>
+        <!--Data 3 Selesai-->
+
+        <!--Data 4-->
+        <TableRow>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row4no"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row4nama"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row4mk"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row4kls"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:padding="8sp"
+                android:text="@string/row1jdw"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+        </TableRow>
+        <!--Data 4 Selesai-->
+
+     </TableLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
